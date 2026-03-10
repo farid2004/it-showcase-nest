@@ -6,8 +6,10 @@ import { Button } from "@/components/ui/button";
 const navLinks = [
   { name: "Accueil", href: "#" },
   { name: "À propos", href: "#about" },
+  { name: "Formation", href: "#formation" },
   { name: "Compétences", href: "#skills" },
   { name: "Projets", href: "#projects" },
+  { name: "Objectifs", href: "#objectifs" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -24,11 +26,11 @@ const Navbar = () => {
       <div className="container px-6">
         <div className="flex items-center justify-between h-16">
           <a href="#" className="font-mono text-xl font-bold text-gradient">
-            &lt;AD /&gt;
+            &lt;IT /&gt;
           </a>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
               <a
                 key={link.name}

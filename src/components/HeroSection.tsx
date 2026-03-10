@@ -23,7 +23,7 @@ const HeroSection = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
           >
-            &lt;hello world /&gt;
+            &lt;portfolio /&gt;
           </motion.p>
           
           <motion.h1 
@@ -32,16 +32,26 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
           >
-            Je suis <span className="text-gradient">Alex Dupont</span>
+            Technologies de l'<span className="text-gradient">Information</span>
           </motion.h1>
           
           <motion.p 
-            className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto"
+            className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-3xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
           >
-            Développeur Full Stack passionné par la création d'expériences web modernes et performantes
+            Développement Web · Réseaux · Administration de systèmes
+          </motion.p>
+
+          <motion.p 
+            className="text-base text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.45 }}
+          >
+            Profil polyvalent en conception d'applications web, gestion d'infrastructures réseau 
+            et administration de systèmes informatiques
           </motion.p>
           
           <motion.div 
@@ -50,10 +60,17 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
           >
-            <Button className="glow-primary bg-primary text-primary-foreground hover:bg-primary/90">
+            <Button 
+              className="glow-primary bg-primary text-primary-foreground hover:bg-primary/90"
+              onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
+            >
               Voir mes projets
             </Button>
-            <Button variant="outline" className="border-primary/50 hover:border-primary hover:bg-primary/10">
+            <Button 
+              variant="outline" 
+              className="border-primary/50 hover:border-primary hover:bg-primary/10"
+              onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+            >
               Me contacter
             </Button>
           </motion.div>

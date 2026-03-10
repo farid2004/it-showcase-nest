@@ -18,7 +18,7 @@ const ContactSection = () => {
             Me <span className="text-gradient">contacter</span>
           </h2>
           <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-16">
-            Intéressé par une collaboration ? N'hésitez pas à me contacter pour discuter de votre projet
+            Intéressé par mon profil ? N'hésitez pas à me contacter pour discuter d'opportunités
           </p>
         </motion.div>
 
@@ -74,7 +74,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
-                    <p className="font-medium">alex.dupont@email.com</p>
+                    <p className="font-medium">contact@example.com</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4 p-4 rounded-xl bg-gradient-card border border-border">
@@ -83,7 +83,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Localisation</p>
-                    <p className="font-medium">Paris, France</p>
+                    <p className="font-medium">Montréal, Québec, Canada</p>
                   </div>
                 </div>
               </div>
@@ -92,7 +92,7 @@ const ContactSection = () => {
             <div className="p-6 rounded-2xl bg-gradient-card border border-border">
               <p className="font-mono text-sm text-muted-foreground mb-2">// Disponibilité</p>
               <p className="text-foreground">
-                Actuellement <span className="text-accent font-semibold">disponible</span> pour des missions freelance et des opportunités à temps plein.
+                Actuellement <span className="text-accent font-semibold">disponible</span> pour des opportunités en administration système, réseaux et développement web.
               </p>
             </div>
           </motion.div>

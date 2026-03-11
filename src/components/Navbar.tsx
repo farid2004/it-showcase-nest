@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className="container px-6">
         <div className="flex items-center justify-between h-16">
           <a href="#" className="font-mono text-xl font-bold text-gradient">
-            &lt;IT /&gt;
+            Portfolio IT
           </a>
 
           {/* Desktop Nav */}
@@ -40,8 +40,10 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
-            <Button size="sm" className="glow-primary bg-primary text-primary-foreground hover:bg-primary/90">
-              CV
+            <Button asChild size="sm" className="glow-primary bg-primary text-primary-foreground hover:bg-primary/90">
+              <a href="/CV_Farid_Hammad.pdf" target="_blank" rel="noopener noreferrer">
+                CV
+              </a>
             </Button>
           </div>
 

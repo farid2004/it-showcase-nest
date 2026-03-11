@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
+import { Github, Linkedin, Mail, ChevronDown, Server, Shield, Network } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
@@ -18,12 +18,12 @@ const HeroSection = () => {
           className="text-center"
         >
           <motion.p 
-            className="font-mono text-primary mb-4 text-sm tracking-wider"
+            className="font-mono text-primary mb-4 text-sm tracking-wider uppercase"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
           >
-            &lt;portfolio /&gt;
+            Étudiant en Gestion de Réseaux • Collège de Rosemont
           </motion.p>
           
           <motion.h1 
@@ -32,16 +32,16 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
           >
-            Technologies de l'<span className="text-gradient">Information</span>
+            Farid <span className="text-gradient">Hammad</span>
           </motion.h1>
           
           <motion.p 
-            className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-3xl mx-auto"
+            className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-3xl mx-auto font-medium"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
           >
-            Développement Web · Réseaux · Administration de systèmes
+            Infrastructures Réseaux · Sécurité · Virtualisation
           </motion.p>
 
           <motion.p 
@@ -50,8 +50,9 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.45 }}
           >
-            Profil polyvalent en conception d'applications web, gestion d'infrastructures réseau 
-            et administration de systèmes informatiques
+            Expertise en déploiement <strong>Active Directory</strong>, administration 
+            de serveurs <strong>Windows & Linux</strong> et environnements virtualisés 
+            (<strong>VMware, Proxmox</strong>). Passionné par l'automatisation système.
           </motion.p>
           
           <motion.div 
@@ -64,7 +65,7 @@ const HeroSection = () => {
               className="glow-primary bg-primary text-primary-foreground hover:bg-primary/90"
               onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
             >
-              Voir mes projets
+              Voir mes réalisations
             </Button>
             <Button 
               variant="outline" 
@@ -81,15 +82,15 @@ const HeroSection = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
           >
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" 
+            <a href="https://github.com/farid2004" target="_blank" rel="noopener noreferrer" 
                className="text-muted-foreground hover:text-primary transition-colors">
               <Github className="w-6 h-6" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.linkedin.com/in/farid-h-1a645332a/" target="_blank" rel="noopener noreferrer"
                className="text-muted-foreground hover:text-primary transition-colors">
               <Linkedin className="w-6 h-6" />
             </a>
-            <a href="mailto:contact@example.com"
+            <a href="mailto:hfarid2004@gmail.com"
                className="text-muted-foreground hover:text-primary transition-colors">
               <Mail className="w-6 h-6" />
             </a>

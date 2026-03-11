@@ -41,7 +41,7 @@ const Navbar = () => {
               </a>
             ))}
             <Button asChild size="sm" className="glow-primary bg-primary text-primary-foreground hover:bg-primary/90">
-              <a href="/it-showcase-nest/CV_Farid_Hammad.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="CV_Farid_Hammad.pdf" target="_blank" rel="noopener noreferrer">
                 CV
               </a>
             </Button>
